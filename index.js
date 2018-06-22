@@ -1,10 +1,11 @@
 var result = 0;
-function displayOutput(number) {
+
+const displayOutput = (number) => {
   let el = getOutputElement();
   el.value += number;
 }
 
-function calculate(stringValue) {
+const calculate = (stringValue) => {
   const stringWithoutResult = stringValue.replace(`${result}`, '');
   const stringValues = stringWithoutResult.split('').filter(a => (a !== '#' && a !== '*'));
   const values = stringValues.map(a => parseInt(a));
@@ -16,18 +17,18 @@ function calculate(stringValue) {
   return result;
 }
 
-function calculateSum() {
+const calculateSum = () => {
   const el = getOutputElement();
   const sum = calculate(el.value);
   el.value = sum;
 }
 
 
-function getOutputElement() {
+const getOutputElement = () => {
   return document.getElementById('numberOutput');
 }
 
-function resetOutput() {
+const resetOutput = () => {
   let el = getOutputElement();
   el.value = '';
   result = 0;
