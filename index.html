@@ -1,36 +1,37 @@
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
   <script src="./index.js"></script>
   <div class="container">
     <div class="row">
-      <input id="numberOutput" type="text" readonly />
+      <input id="numberOutput" class="output-field" type="text" readonly />
     </div>
     <div class="row">
-        <button type="button" onclick="displayOutput('1')">1</button>
-        <button type="button" onclick="displayOutput('2')">2</button>
-        <button type="button" onclick="displayOutput('3')">3</button>
+        <button type="button" class="number-button" onclick="displayOutput('1')">1</button>
+        <button type="button" class="number-button" onclick="displayOutput('2')">2</button>
+        <button type="button" class="number-button" onclick="displayOutput('3')">3</button>
     </div>
     <div class="row">
-        <button type="button" onclick="displayOutput('4')">4</button>
-        <button type="button" onclick="displayOutput('5')">5</button>
-        <button type="button" onclick="displayOutput('6')">6</button>
+        <button type="button" class="number-button" onclick="displayOutput('4')">4</button>
+        <button type="button" class="number-button" onclick="displayOutput('5')">5</button>
+        <button type="button" class="number-button" onclick="displayOutput('6')">6</button>
     </div>
     <div class="row">
-        <button type="button" onclick="displayOutput('7')">7</button>
-        <button type="button" onclick="displayOutput('8')">8</button>
-        <button type="button" onclick="displayOutput('9')">9</button>
+        <button type="button" class="number-button" onclick="displayOutput('7')">7</button>
+        <button type="button" class="number-button" onclick="displayOutput('8')">8</button>
+        <button type="button" class="number-button" onclick="displayOutput('9')">9</button>
     </div>
     <div class="row">
-        <button type="button" onclick="displayOutput('*')">*</button>
-        <button type="button" onclick="displayOutput('0')">0</button>
-        <button type="button" onclick="displayOutput('#')">#</button>
+        <button type="button" class="number-button" onclick="displayOutput('*')">*</button>
+        <button type="button" class="number-button" onclick="displayOutput('0')">0</button>
+        <button type="button" class="number-button" onclick="displayOutput('#')">#</button>
     </div>
     <div class="row">
-      <button type="button" onclick="calculateSum()">Calculate</button>
-      <button type="button" onclick="resetOutput()">Reset</button>
+      <button type="button" class="number-button" onclick="calculateSum()">Calculate</button>
+      <button type="button" class="number-button" onclick="resetOutput()">Reset</button>
     </div>
 
   </div>
